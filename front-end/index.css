@@ -21,7 +21,7 @@
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
 
-    --box-shadow: 0 2rem 3rem var(--color-light)
+    --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 /* ------------- DARK THEME VARIABLES ------------- */
@@ -59,7 +59,6 @@ body{
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
-
 }
 a{
     color: var(--color-dark);
@@ -70,7 +69,7 @@ img{
 }
 h1{
     font-weight: 800;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 h2{
     font-size: 1.4rem;
@@ -138,7 +137,8 @@ aside .close{
 aside .sidebar{
     display: flex;
     flex-direction: column;
-    height: 86vh;
+    height: 70vh;
+    width: 17vw;
     position: relative;
     top: 3rem;
     background: var(--color-white);
@@ -197,7 +197,7 @@ main .date{
     background: var(--color-light);
     border-radius: var(--border-radius-1);
     margin-top: 1rem;
-    padding: 0.5rem 1.6rem;   
+    padding: 0.3rem 1rem;   
 }
 main .date input[type='date']{
     background: transparent;
@@ -205,10 +205,12 @@ main .date input[type='date']{
 }
 main .insights{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
 }
 main .insights > div{
+    width: 17vw;
+    height: 29vh;
     background:var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -224,7 +226,7 @@ main .insights > div span{
     padding: 0.5rem;
     border-radius: 50%;
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 main .insights > div.expenses span{
     background:var(--color-danger);
@@ -239,11 +241,12 @@ main .insights > div .middle{
 }
 main .insights h3{
     margin: 1rem 0 0.6rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 main .insights .progress{
     position: relative;
-    width: 92px;
+
+    width: 80px;
     height: 92px;
     border-radius: 50%;
 }
@@ -294,7 +297,7 @@ main .recent-orders h2{
 }
 main .recent-orders table{
     background: var(--color-white);
-    width: 100%;
+    width: 95%;
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     text-align: center;
@@ -367,6 +370,7 @@ main .recent-orders a{
     margin-bottom: 0.8rem;
 }
 .right .recent-updates .updates{
+    width: 23vw;
     background: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
@@ -385,6 +389,7 @@ main .recent-orders a{
 
 /* ========== Sales Analytics ========== */
 .right .sales-analytics{
+    width: 27vw;
     margin-top: 2rem;
     
 }

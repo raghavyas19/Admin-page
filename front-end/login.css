@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(45deg, #1f4037, #1e5d7d);
+    background: linear-gradient(45deg, #ffffff, #a2b3bb);
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -13,8 +13,13 @@ body {
     width: 20rem;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+    transition: all 150ms ease;   
+}
+
+.container:hover{
+    box-shadow: none;
 }
 
 h1 {
