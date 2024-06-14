@@ -9,7 +9,7 @@ const productRoute = require('./routes/productRoute');
 const PORT = process.env.PORT || 9000;
 
 const mongoose = require('mongoose');
-
+const mongoURL = process.env.MONGO_URL || 'mongodb+srv://raghavyas19:ecomproject@ecom.sfdz2gg.mongodb.net/';
 // Connecting to MongoDB without deprecated options
 mongoose.connect(process.env.MONGO_URL)
     .then(() => {

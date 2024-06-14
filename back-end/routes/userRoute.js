@@ -18,7 +18,7 @@ router.post('/login', async (req, resp) => {
         let user = await User.findOne(req.body).select("-u_password -u_confirm_password");
         if (user) {
             resp.send({
-                message: `Welcome ${user.name}`,
+                message: `Welcome ${user.u_name}`,
                 user: user
             });
         }
